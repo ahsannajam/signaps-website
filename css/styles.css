@@ -212,7 +212,7 @@ html {
 
 .h-h1 span, .h-h2 span, .h-h3 span, .h-h4 span, .h-h5 span {
     color: #2B6CB0;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 
@@ -1299,7 +1299,7 @@ p {
 }
 
 h1 {
-	font-size: 46px;
+	font-size: 42px;
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
@@ -1442,7 +1442,7 @@ ul.pricing-table {
 
 
 .h-h2 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     line-height: 60px;
 }
