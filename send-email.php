@@ -33,11 +33,11 @@ try {
     $mail->Username = '2c7bef154be156'; // Your Titan Email address
     $mail->Password = '15d2d5410cc1f7'; // Your Titan Email password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use TLS
-    $mail->Port = 587; // Common port for SMTP with TLS
+    $mail->Port = 2525; // Common port for SMTP with TLS
 
     // Set email details
     $mail->setFrom($email, $name);
-    $mail->addAddress('fortemppp@gmail.com'); // Recipient email
+    $mail->addAddress('workflow@signaps.com'); // Recipient email
     $mail->addReplyTo($email, $name); // Reply-to address
 
     // Email content
