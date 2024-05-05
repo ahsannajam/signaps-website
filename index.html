@@ -319,21 +319,19 @@
       AOS.init();
   </script>
 <script>
-      $(document).ready(function() {
+$(document).ready(function() {
   $('#contact-form').on('submit', function(e) {
-    e.preventDefault(); // Prevent the form from submitting normally
+    e.preventDefault(); // Prevent default form submission
 
-    var formData = $(this).serialize(); // Collect form data
+    var formData = $(this).serialize(); // Serialize form data for AJAX
 
-    // AJAX request to send-email.php
     $.ajax({
       type: 'POST',
-      url: 'send-email.php', // PHP script to handle the email
+      url: 'send-email.php', // The PHP script to handle form submission
       data: formData,
       success: function(response) {
         $('#form-message').text('Email sent successfully!').css('color', 'green').fadeIn();
-        // Optionally reset the form
-        $('#contact-form')[0].reset();
+        $('#contact-form')[0].reset(); // Optionally reset the form
       },
       error: function(xhr, status, error) {
         var errorMessage = xhr.responseText || 'Failed to send email.';
