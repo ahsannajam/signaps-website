@@ -42,7 +42,7 @@ try {
 
     // Email content
     $mail->isHTML(false); // Plain text email
-    $mail->Subject = 'Contact Request: ' . $subject;
+    $mail->Subject = 'Signaps.com - Contact Request: ' . $subject;
     $mail->Body = "Name: $name\nEmail: $email\nCompany: $company\nSubject: $subject\nMessage: \n$message\n";
 
     // Send email
