@@ -273,7 +273,7 @@
                     <input type="submit" value="Send" class="button rounded">
                   </form>
                   <!-- Message display area -->
-                  <div id="form-message" class="mb-1 text-left" data-aos="fade-up" data-aos-delay="600" style="display:none; color: red;"></div>
+                  <div id="form-message" class="mb-1 text-center" data-aos="fade-up" data-aos-delay="600" style="display:none; color: red;font-size: 18px;"></div>
                 </div>
 
                 </div>
