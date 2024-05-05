@@ -1,17 +1,10 @@
 <?php
-// Ensure this script is accessed via POST method
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
-    die('Method Not Allowed');
+    echo 'Method Not Allowed';
+    exit;
 }
 
-// Basic spam protection (honeypot technique)
-if (!empty($_POST['hidden_field'])) {
-    http_response_code(400);
-    die('Bad Request');
-}
-
-// Clean input data to prevent XSS and injection attacks
 function clean_input($data) {
     return htmlspecialchars(stripslashes(trim($data)));
 }
@@ -22,31 +15,28 @@ $company = clean_input($_POST['company']);
 $subject = clean_input($_POST['subject']);
 $message = clean_input($_POST['message']);
 
-// Validate email address
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
-    die('Invalid email address');
+    echo 'Invalid email address';
+    exit;
 }
 
-// Prepare email headers
-$to = 'workflow@signaps.com';  // Replace with your email
-$subject = 'Contact Request: ' . $subject;
+$to = 'fortemppp@gmail.com'; // Change to your recipient email
+$email_subject = 'Contact Request: ' . $subject;
+
+$email_body = "Name: $name\nEmail: $email\nCompany: $company\nSubject: $subject\nMessage: \n$message\n";
+
 $headers = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
-// Prepare email body
-$email_message = "Name: $name\n";
-$email_message .= "Email: $email\n";
-$email_message .= "Company: $company\n";
-$email_message .= "Subject: $subject\n";
-$email_message .= "Message: \n$message\n";
-
-// Send the email
-if (mail($to, $subject, $email_message, $headers)) {
+if (mail($to, $email_subject, $email_body, $headers)) {
     http_response_code(200);
-    echo 'Email sent successfully';
+    echo 'Email sent successfully!';
 } else {
     http_response_code(500);
     echo 'Failed to send email';
 }
+?>
