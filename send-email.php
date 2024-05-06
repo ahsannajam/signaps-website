@@ -12,7 +12,7 @@ function clean_input($data) {
 $recaptchaToken = clean_input($_POST['recaptchaToken']);
 
 // Validate reCAPTCHA token
-$secretKey = '6LfHA9MpAAAAAAQVYIXoTLv97lrUrtEHn3AdSqub'; // Your reCAPTCHA secret key
+$secretKey = '6Le5G9MpAAAAAP0jFLnYsGZLKiAHT2MCvqolT-Wb'; // Your reCAPTCHA secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaToken");
 $responseKeys = json_decode($response, true);
 

@@ -44,7 +44,7 @@
       transition: all .25s ease;
     }
   </style>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LfHA9MpAAAAAD2MbbNWIDOf_QXMhU-xdgrv0jq_"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6Le5G9MpAAAAABC_5PaUz4xoOrfzL7wqnyawwLUz"></script>
 
 </head>
 
@@ -337,7 +337,7 @@
   </script>
   <script>
   grecaptcha.ready(function() {
-    grecaptcha.execute('6LfHA9MpAAAAAD2MbbNWIDOf_QXMhU-xdgrv0jq_', { action: 'contact' }).then(function(token) {
+    grecaptcha.execute('6Le5G9MpAAAAABC_5PaUz4xoOrfzL7wqnyawwLUz', { action: 'contact' }).then(function(token) {
       document.getElementById('recaptchaToken').value = token;
     });
   });
