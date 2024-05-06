@@ -32,7 +32,7 @@ try {
     $mail->SMTPAuth = true;
     $mail->Username = 'workflow@signaps.com'; // Your Titan Email address
     $mail->Password = '.>{R^lLq-lw~Yj.'; // Your Titan Email password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use TLS
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use TLS
     $mail->Port = 465; // Common port for SMTP with TLS
 
     // Set email details
