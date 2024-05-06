@@ -8,7 +8,19 @@ require 'vendor/autoload.php';
 function clean_input($data) {
     return htmlspecialchars(stripslashes(trim($data)));
 }
+// Get reCAPTCHA token from form
+$recaptchaToken = clean_input($_POST['recaptchaToken']);
 
+// Validate reCAPTCHA token
+$secretKey = '6LfHA9MpAAAAAAQVYIXoTLv97lrUrtEHn3AdSqub'; // Your reCAPTCHA secret key
+$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaToken");
+$responseKeys = json_decode($response, true);
+
+if (intval($responseKeys["success"]) !== 1) {
+    http_response_code(403);
+    echo 'reCAPTCHA verification failed.';
+    exit;
+}
 // Sanitize and validate input
 $name = clean_input($_POST['name']);
 $email = clean_input($_POST['email']);
@@ -36,9 +48,9 @@ try {
     $mail->Port = 465; // Common port for SMTP with TLS
 
     // Set email details
-    $mail->setFrom($email, $name);
+    $mail->setFrom('workflow@signaps.com', $name);
     $mail->addAddress('workflow@signaps.com'); // Recipient email
-    $mail->addReplyTo($email, $name); // Reply-to address
+    $mail->addReplyTo('workflow@signaps.com', $name); // Reply-to address
 
     // Email content
     $mail->isHTML(false); // Plain text email
@@ -51,6 +63,6 @@ try {
     echo 'Email sent successfully';
 } catch (Exception $e) {
     http_response_code(500);
-    echo 'Failed to send email.'. $mail->ErrorInfo; // Detailed error information
+    echo 'Failed to send email.'; // Detailed error information
 }
 ?>

@@ -1,0 +1,13 @@
+{
+    "name": "ahsannajam/phpmailer",
+    "description": "My phpmailer/phpmailer",
+    "authors": [
+        {
+            "name": "Ahsan uz zaman",
+            "email": "ahsannajam@hotmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
