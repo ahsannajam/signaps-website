@@ -68,10 +68,11 @@
     <div class="grid-x">  
       <div class="medium-6 cell">  
         <p class="h-small" style="font-size: 22px;" data-aos="fade-up" data-aos-delay="400">We Bring You More Clients</p>
-        <h4 class="h-h4 mb-2" data-aos="fade-up" data-aos-delay="600" style="padding-right: 30px;">Achieve your sales goals by having your most <span>profitable lead generation and referral processes done for you!</span></h4>
+        <h4 class="h-h4 mb-2" data-aos="fade-up" data-aos-delay="600" style="padding-right: 30px;">Achieve your goals by have most
+          robust and automated software specially designed for your business.</h4>
       </div> 
       <div class="medium-6 cell">  
-        <img src="images/pic2.jpeg" class="h-img" data-aos="fade-up" data-aos-delay="400">
+        <img src="images/business.jpg" class="h-img" data-aos="fade-up" data-aos-delay="400">
       </div>  
     </div>   
   </div>
