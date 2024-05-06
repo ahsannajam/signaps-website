@@ -63,6 +63,6 @@ try {
     echo 'Email sent successfully';
 } catch (Exception $e) {
     http_response_code(500);
-    echo 'Failed to send email.'; // Detailed error information
+    echo 'Failed to send email.'. $mail->ErrorInfo;// Detailed error information
 }
 ?>
