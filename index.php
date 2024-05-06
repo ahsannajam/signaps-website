@@ -255,7 +255,7 @@
                     <h4 class="mb-2">Contact Us</h4>
                    <p class="mb-1 text-left" data-aos="fade-up" data-aos-delay="600">
 
-<strong>We are internet-based company – Working Worldwide. We love automation and at the same time, we believe nothing beats a conversation with a real human being. Contact us through our contact form, or write to us at <a href="mailto:contactus@signaps.com">contactus@signaps.com</a></strong>
+<strong>We love automation and at the same time, we believe nothing beats a conversation with a real human being. Contact us through our contact form, or write to us at <a href="mailto:contactus@signaps.com">contactus@signaps.com</a></strong>
 
                    </p>
                    <p class="text-left" data-aos="fade-up" data-aos-delay="600">We will set a time, discuss the situation, where you are now, and through what solutions you can get to where you want to be.</p>
@@ -293,14 +293,14 @@
     <div class="grid-container">
       <div class="grid-x">
         <div class="cell large-6">
-          <p class="">© 2022 signaps.com. All rights reserved</p>
+          <p class="">© 2024 signaps.com. All rights reserved</p>
         </div>
         <div class="cell large-6">
-          <ul class="menu simple footer-link align-right" style="margin-top: 7px; margin-bottom: 10px;">
+          <!-- <ul class="menu simple footer-link align-right" style="margin-top: 7px; margin-bottom: 10px;">
             <li><a href="/privacy">Privacy policy</a></li>
             <li><a href="/terms">Terms of Service</a></li>
             <li><a href="/personal-info">Do Not Sell My Personal Info</a></li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
