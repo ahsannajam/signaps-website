@@ -33,7 +33,7 @@ try {
     $mail->Username = 'workflow@signaps.com'; // Your Titan Email address
     $mail->Password = '.>{R^lLq-lw~Yj.'; // Your Titan Email password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use TLS
-    $mail->Port = 587; // Common port for SMTP with TLS
+    $mail->Port = 465; // Common port for SMTP with TLS
 
     // Set email details
     $mail->setFrom($email, $name);
@@ -51,6 +51,6 @@ try {
     echo 'Email sent successfully';
 } catch (Exception $e) {
     http_response_code(500);
-    echo 'Failed to send email.'; // Detailed error information
+    echo 'Failed to send email.'. $mail->ErrorInfo; // Detailed error information
 }
 ?>
