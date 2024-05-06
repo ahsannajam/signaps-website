@@ -42,13 +42,16 @@
   </style>
 </head>
 <body>
-  <header class="h grid-container">  
+
+
+<div class="sticky">
+<header class="h grid-container">  
     <div class="grid-x">  
       <div class="medium-12 cell">  
         <div class="top-bar">
           <div class="top-bar-left">
             <ul class="menu">
-              <li class="menu-text"><a href="/" class="text-white" style="background: white; padding-left: 0;"><img src="images/BUSINESS-APP-logo-256.jpg" width="160"></a></li>
+              <li class="menu-text"><a href="/" class="text-white" style="background: white; padding-left: 0;"><img width="120" src="images/BUSINESS-APP-logo-256.jpg" width="160"></a></li>
             </ul>
           </div>
           <div class="top-bar-right">
@@ -63,6 +66,9 @@
       </div>
     </div> 
   </header>  
+</div>
+
+
   <section class="bg-container format-layout">  
   <div class="grid-container">  
     <div class="grid-x">  
@@ -229,6 +235,7 @@
 
                     <a name="about"></a>
 
+
       <section class="bg-h-lg format-layout">
      <div class="grid-container small-text-center">
       <div class="grid-x grid-margin-x">
@@ -263,6 +270,7 @@
 
                    <p  class="text-left mb-3" data-aos="fade-up" data-aos-delay="600">If we’re a good fit, we’ll keep the conversation going. And that’s when all the good things begin to happen.</p>
 
+                   
 
                    <div data-aos="fade-up" data-aos-delay="600">
                   <form id="contact-form" action="send-email.php" method="post">

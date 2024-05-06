@@ -2,6 +2,13 @@
 font-family: 'Inter', sans-serif;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 9999;
+}
+
 #_builder-form .fields-container {
     background: white !important;
 }
@@ -11,6 +18,8 @@ font-family: 'Inter', sans-serif;
     border: 1px dashed #ffffff !important;
     border-radius: 0 !important;
 }
+
+
 
 .step-container {
     display: grid;
@@ -108,9 +117,9 @@ html {
     background-size: cover;
 }
 
-.bg-container-contact {
+/* .bg-container-contact {
         background: url(../images/contact.png) no-repeat bottom right;
-}
+} */
 
 
 .bg-container-2 {
