@@ -15,11 +15,7 @@ $recaptchaToken = clean_input($_POST['recaptchaToken']);
 $secretKey = '6Le5G9MpAAAAAP0jFLnYsGZLKiAHT2MCvqolT-Wb'; // Your reCAPTCHA secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaToken");
 $responseKeys = json_decode($response, true);
-if ($responseKeys["success"] !== true) {
-    echo 'reCAPTCHA failed: ' . $responseKeys["error-codes"];
-    http_response_code(403);
-    exit;
-}
+
 if (intval($responseKeys["success"]) !== 1) {
     http_response_code(403);
     echo 'reCAPTCHA verification failed.';
@@ -67,6 +63,7 @@ try {
     echo 'Email sent successfully';
 } catch (Exception $e) {
     http_response_code(500);
-    echo 'Failed to send email.'. $mail->ErrorInfo;// Detailed error information
+    echo 'Failed to send email.';// Detailed error information
+    echo '<script>console.log("' . $mail->ErrorInfo . '")</script>';
 }
 ?>
