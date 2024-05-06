@@ -15,7 +15,11 @@ $recaptchaToken = clean_input($_POST['recaptchaToken']);
 $secretKey = '6Le5G9MpAAAAAP0jFLnYsGZLKiAHT2MCvqolT-Wb'; // Your reCAPTCHA secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaToken");
 $responseKeys = json_decode($response, true);
-
+if ($responseKeys["success"] !== true) {
+    echo 'reCAPTCHA failed: ' . $responseKeys["error-codes"];
+    http_response_code(403);
+    exit;
+}
 if (intval($responseKeys["success"]) !== 1) {
     http_response_code(403);
     echo 'reCAPTCHA verification failed.';
