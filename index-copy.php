@@ -63,9 +63,9 @@
             </div>
             <div class="top-bar-right">
               <ul class="menu">
-                <!-- <li><a href="#services">Services</a></li> -->
-                <!-- <li><a href="#products">Products</a></li> -->
-                <!-- <li><a href="#about">About Us</a></li> -->
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
               </ul>
             </div>
@@ -76,7 +76,7 @@
   </div>
 
 
-  <!-- <section class="bg-container format-layout">
+  <section class="bg-container format-layout">
     <div class="grid-container">
       <div class="grid-x">
         <div class="medium-6 cell">
@@ -89,9 +89,9 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
- <!--  <a name="services"></a>
+  <a name="services"></a>
 
   <section class="bg-container-2 services text-center" style="padding-bottom: 100px;">
     <div class="grid-container">
@@ -178,11 +178,11 @@
       </div>
 
     </div>
-  </section> -->
+  </section>
 
   <a name="products"></a>
 
-  <!-- <h3 class="h-h3 text-center mt-3"><span>Our Products In Market</span></h3> -->
+  <h3 class="h-h3 text-center mt-3"><span>Our Products In Market</span></h3>
   <section class="bg-h-lg format-layout-2">
     <div class="grid-container">
       <div class="grid-x">
@@ -243,7 +243,7 @@
   <a name="about"></a>
 
 
-  <!-- <section class="bg-h-lg format-layout">
+  <section class="bg-h-lg format-layout">
     <div class="grid-container small-text-center">
       <div class="grid-x grid-margin-x">
         <div class="cell medium-6 two-c-s text-center">
@@ -255,7 +255,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
 
   <section class="bg-container-3">
@@ -270,12 +270,12 @@
                   <h4 class="mb-2">Contact Us</h4>
                   <p class="mb-1 text-left" data-aos="fade-up" data-aos-delay="600">
 
-                    <!-- <strong><!-- We love automation and at the same time, we believe nothing beats a conversation with a real human being.--> Contact us through our contact form, or write to us at <a href="mailto:contactus@signaps.com">contactus@signaps.com</a></strong> 
+                    <strong>We love automation and at the same time, we believe nothing beats a conversation with a real human being. Contact us through our contact form, or write to us at <a href="mailto:contactus@signaps.com">contactus@signaps.com</a></strong>
 
                   </p>
-                 <!--  <p class="text-left" data-aos="fade-up" data-aos-delay="600">We will set a time, discuss the situation, where you are now, and through what solutions you can get to where you want to be.</p>
+                  <p class="text-left" data-aos="fade-up" data-aos-delay="600">We will set a time, discuss the situation, where you are now, and through what solutions you can get to where you want to be.</p>
 
-                  <p class="text-left mb-3" data-aos="fade-up" data-aos-delay="600">If we’re a good fit, we’ll keep the conversation going. And that’s when all the good things begin to happen.</p> -->
+                  <p class="text-left mb-3" data-aos="fade-up" data-aos-delay="600">If we’re a good fit, we’ll keep the conversation going. And that’s when all the good things begin to happen.</p>
 
 
 

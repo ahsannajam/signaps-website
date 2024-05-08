@@ -60,7 +60,7 @@ try {
     // Send email
     $mail->send();
     http_response_code(200);
-    echo 'Email sent successfully';
+    echo 'Thank you for contacting us. We have received your message, our team will contact you shortly.';
 } catch (Exception $e) {
     http_response_code(500);
     echo 'Failed to send email.';// Detailed error information
