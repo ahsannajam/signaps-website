@@ -354,7 +354,7 @@
           url: 'send-email.php', // The PHP script to handle form submission
           data: formData,
           success: function(response) {
-            $('#form-message').text('Email sent successfully!').css('color', 'green').fadeIn();
+            $('#form-message').text('Thank you for contacting us. We have received your message, our team will contact you shortly.').css('color', 'green').fadeIn();
             $('#contact-form')[0].reset(); // Optionally reset the form
           },
           error: function(xhr, status, error) {
